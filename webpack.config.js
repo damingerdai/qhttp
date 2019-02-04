@@ -3,7 +3,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-        http: './src/http.js',
+        http: './src/http.ts',
     },
     mode: 'production',
     target: 'node',
