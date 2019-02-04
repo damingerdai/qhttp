@@ -1,0 +1,2 @@
+# qhttp
+基于promise和request的http请求工具类，使用webpack打包
