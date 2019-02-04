@@ -2,7 +2,8 @@
   "name": "qhttp",
   "version": "1.0.0",
   "description": "基于promise和request的http请求工具类",
-  "main": "index.js",
+  "main": "src/http.js",
+  "sideEffects": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +13,9 @@
   ],
   "author": "arthur ming",
   "license": "MIT",
+  "dependencies": {
+    "request": "^2.88.0"
+  },
   "devDependencies": {
     "clean-webpack-plugin": "^1.0.1",
     "ts-loader": "^5.3.3",
@@ -19,8 +23,5 @@
     "typescript": "^3.3.1",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1"
-  },
-  "dependencies": {
-    "request": "^2.88.0"
   }
 }
