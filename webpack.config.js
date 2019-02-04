@@ -37,6 +37,6 @@ module.exports = {
         new CleanWebpackPlugin(['dist']),
     ],
     externals: [
-        'rxjs',
+        'request',
     ],
 }
