@@ -17,6 +17,7 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
+    "@types/request": "^2.48.1",
     "clean-webpack-plugin": "^1.0.1",
     "ts-loader": "^5.3.3",
     "tslint": "^5.12.1",
