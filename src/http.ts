@@ -1,16 +1,50 @@
 import request from 'request';
 import { Model, Method } from './model';
 
+/**
+ * http服务接口
+ */
 interface IHttpService {
 
+    /**
+     * 发送get请求
+     * @param url 请求连接
+     * @param data 数据
+     * @param header 请求头
+     */
     get<T>(url: string, data: Model<string>, header: Model<string>): Promise<T>;
 
+    /**
+     * 发送post请求
+     * @param url 请求连接 
+     * @param data 数据
+     * @param header 请求头
+     */
     post<T>(url: string, data: Model<string>, header: Model<string>): Promise<T>;
 
+    /**
+     * 发送put请求
+     * @param url 请求连接
+     * @param data 数据
+     * @param header 请求头
+     */
     put<T>(url: string, data: Model<string>, header: Model<string>): Promise<T>;
 
+    /**
+     * 发送delte请求
+     * @param url 请求连接
+     * @param header 请求头
+     */
     delete<T>(url: string, header: Model<string>): Promise<T>;
 
+    /**
+     * 发送http请求
+     * @param method 请求方法
+     * @param url 请求的连接
+     * @param data 请求体数据
+     * @param params 请求数据
+     * @param header 请求体
+     */
     http<T>(method: string, url: string, data: Model<string>, params: Model<string>, header: Model<string>): Promise<T>;
 }
 
