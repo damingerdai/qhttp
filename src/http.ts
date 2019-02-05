@@ -45,7 +45,7 @@ interface IHttpService {
      * @param params 请求数据
      * @param header 请求体
      */
-    http<T>(method: string, url: string, data: Model<string>, params: Model<string>, header: Model<string>): Promise<T>;
+    http<T>(method: Method, url: string, data: Model<string>, params: Model<string>, header: Model<string>): Promise<T>;
 }
 
 export class HttpService implements IHttpService {
